@@ -1,0 +1,275 @@
+<html>
+<body background="pk.jpg">
+<style>
+body {
+background:pink;
+}
+
+
+c{
+float:right;
+}
+h1{
+border: 2px solid black;
+border-radius: 6px;
+text-align:center;
+color:yellow;
+font-size:40px;
+font-family:Britannic;
+
+width:50%;
+background-color:blue;
+margin-right:auto;
+margin-left:auto;
+}
+
+
+h3{
+position:absolute;
+        top:340;
+left:15;
+}
+
+imgc{
+position:absolute;
+        top:10;
+right:70;
+}
+
+imgl{
+position:absolute;
+        top:10;
+right:10;
+}
+
+lg{
+text-align:center;	
+border: 1px solid blue;
+background-color: skyblue;
+border-radius: 4px;
+position:absolute;
+	height: 24px;
+	width: 60px;
+        top:30;
+        right:35px;
+
+}
+	
+
+img1{
+position:absolute;
+top:130;
+left:15;
+}
+img2{
+position:absolute;
+        top:130;
+left:260;
+}
+
+img3{
+position:absolute;
+top:130;
+left:500;
+}
+
+img4{
+position:absolute;
+        top:400;
+left:15;
+}
+
+img5{
+position:absolute;
+        top:400;
+left:260;
+}
+img6{
+position:absolute;
+        top:400;
+left:500;
+}
+ 
+
+
+nav2 {
+margin-right:0px;
+width:21%;
+float:right;
+}
+nav2 ul{
+list-style-type:none;
+}
+
+nav2 li{
+float:left;
+margin-right:10px;
+}
+footer {
+color:yellow;
+background-color:black;
+height:68px;
+position:absolute;
+        bottom:0;
+left:0;
+right:0;
+top:635;
+ width: 1335px;
+}
+
+
+alb{
+
+text-align:center;	
+border: 1px solid black;
+background-color: lightgreen;
+border-radius: 6px;
+position:absolute;
+	height: 40px;
+	width: 230px;
+        top:500;
+        right:10px;
+}
+
+pub{
+
+text-align:center;	
+border: 1px solid black;
+background-color: lightgreen;
+border-radius: 6px;
+position:absolute;
+	height: 40px;
+	width: 320px;
+        top:400;
+        right:10px;
+}
+
+auth{
+
+text-align:center;	
+border: 1px solid black;
+background-color: lightgreen;
+border-radius: 6px;
+position:absolute;
+	height: 40px;
+	width: 300px;
+        top:300;
+        right:10px;
+}
+
+
+search{
+text-align:center;	
+border: 1px solid black;
+background-color: lightgreen;
+border-radius: 6px;
+position:absolute;
+	height: 40px;
+	width: 200px;
+       
+
+}
+
+
+
+</style>
+
+<h1>Welcome to Online BookStore...</h1>
+
+
+<h2><font face="AR HERMANN" font size="6" color="green"><u>Most Popular Books</h2></u></font>
+<h3><font face="Kristen ITC" font size="5.5" color="green"><u>Recently Searched</h3></u></font>
+
+
+<imgc> 
+<img src="images/sc.png" width="40px" height="40px" />
+<a href="payment.php"><br>My Cart</a>
+</imgc>
+
+
+<imgl> 
+<img src="images/n.png" width="40px" height="40px" />
+<a href="clearcartlogout.php"><br>Log out</a>
+</imgl>
+
+<img1> 
+<img src="images/dbms.jpeg"width= 200px height= 200px />
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="dbms.php">Buy Now</a></li>
+</img1>
+
+<img2>
+<img src="images/algo.jpg" width= 200px height= 200px/>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="ada.php">Buy Now</a></li>
+</img2>
+
+<img3>
+<img src="images/and.jpg"width= 200px height= 200px />
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="and.php">Buy Now</a></li>
+</img3>
+
+<img4>
+<img src="images/cj.jpg" width= 200px height= 200px/>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cjava.php">Buy Now</a></li>
+</img4>
+
+<img5>
+<img src="images/cn.jpg" width= 200px height= 200px/>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cnetwrk.php">Buy Now</a></li>
+</img5>
+
+<img6>
+<img src="images/th.jpg" width= 200px height= 200px/>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="th.php">Buy Now</a></li>
+</img6>
+
+
+
+<alb>
+<font face="Cursive" font size="5" color="black"><a href="list2.php">Available Books</a></font>
+</alb>
+
+<pub>
+<font face="Cursive" font size="5" color="black"><a href="publisher.php">Search by Publisher Name</a></font>
+</pub>
+
+<auth>
+<font face="Cursive" font size="5" color="black"><a href="author.php">Search by Author Name</a></font>
+</auth>
+
+<c><form action="searchresults.php" method="post">
+<input type="text" name="title" placeholder="Type book name here" font size="20" >
+<input type="submit" value="Search" >
+</form>
+</c>
+<!--<search>
+
+<font face="Cursive" font size="5" color="black"><a href="#">search</a></font>
+</search>
+-->
+
+ <p>
+<footer>
+<small>
+&#160;&#160;By using the Web site, you confirm that you have read, understood, and 
+agreed to be bound by the Terms and Conditions
+<br>&#160;&#160;OnlineBooks Inc. All Rights Reserved <br>&#160;&#160;Copyright &copy; 2002-2015 Niket Raj</small>
+<nav2>
+<ul>
+<li><a href="home.html">Home</a></li>    
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact us</a></li>
+</ul>
+</nav2>
+</footer>
+</p>
+
+</body>
+</html>
+
+

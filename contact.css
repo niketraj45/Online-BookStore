@@ -1,0 +1,36 @@
+body
+{
+background-color:pink;
+}
+
+h1{
+text-align:center;
+color:brown;
+font-size:40px;
+font-family:AR BERKLEY;
+
+width:20%;
+background-color:skyblue;
+margin-right:auto;
+margin-left:auto;
+}
+
+nav {
+width:35%;
+float:right;
+}
+
+footer {
+color:yellow;
+background-color:black;
+height:70px;
+}
+nav ul{
+list-style-type:none;
+}
+
+nav li{
+float:left;
+margin-right:10px;
+}
+}

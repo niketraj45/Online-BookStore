@@ -1,0 +1,127 @@
+<html>
+<body background="w.jpg">
+
+<style>
+
+div
+{
+border:2px solid black;
+background:brown;
+height:430px;
+width:550px;
+border-radius:25px;
+}
+
+#mov{
+position:relative;
+font-family: Gloucester MT;
+color:green;
+font-size:65px;
+}
+
+nav2 {
+color:red;
+margin-right:0px;
+width:26%;
+float:right;
+}
+nav2 ul{
+list-style-type:none;
+}
+
+nav2 li{
+float:left;
+margin-right:10px;
+}
+footer {
+color:yellow;
+background-color:black;
+height:70px;
+position:absolute;
+        bottom:0;
+       
+width: 1355px;
+}
+</style>
+
+<marquee behavior="alternate" id="mov">Your Cart</marquee>
+<p><center>
+
+<?php
+$con=mysqli_connect("localhost","root","niket123","online_book_store");
+// Check connection
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+
+$sql = 'SELECT * from book,payment ; 
+$retval = mysqli_query( $con, $sql);
+if(! $retval )
+{
+  die('Could not get data: ' . mysql_error());
+}
+?>
+<?php
+echo "<center><table border='3' style='border-color: blue; cellspacing='9' cellpadding='9'>
+
+<tr >
+<th>&#160;&#160;Book_id&#160;&#160;</th>
+<th>Title</th>
+<th>&#160;&#160;Author&#160;&#160;</th>
+<th> &#160;&#160;Year&#160; &#160; </th>
+
+<th>&#160;Price (&#8377;)&#160;</th>
+
+
+
+
+</tr>";
+while($row = mysqli_fetch_array($retval,MYSQL_ASSOC)) {
+    ?>
+
+
+<?php
+$r= $row["basket_id"];
+ echo "<tr>";
+ 
+ echo "<td>" ."<center>". $row['basket_id']."</center>" . "</td>"; 
+echo "<td>" ."<center>". $row['title']."</center>" . "</td>";
+
+echo "<td align='center' width='200'>".$row['cost'] ." </center>" ."</td>";
+echo "<td>" . "<center>".$row['quantity'] ." </center>" ."</td>";
+
+echo "<td>" . "<center>".$row['total'] ."/-</center>" ."</td>";
+
+ 
+echo "</tr>";
+  }
+
+echo "</center></table>";
+?>
+
+
+
+
+<p>
+<footer>
+<small>
+&#160;&#160;By using the Web site, you confirm that you have read, understood, and 
+agreed to be bound by the Terms and Conditions
+<br>&#160;&#160;OnlineBooks Inc. All Rights Reserved <br>&#160;&#160;Copyright &copy; 2002-2015 Niket Raj</small>
+<nav2>
+<ul>
+<li><a href="home.html">Home</a></li>    
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact us</a></li>
+<li><a href="signin.html">My Account</a></li>
+	
+</ul>
+</nav2>
+</footer>
+</p>
+</body>
+</html>
+mysqli_close($con);
+?>
+
